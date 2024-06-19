@@ -1,54 +1,148 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Portfólio Web</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav>
-            <div class="logo">Vinícius</div>
-            <ul class="nav-links">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Vinicius Duarte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="icon" href="assets/img/sobre.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#content">Contato</a></li>
-            </ul>
-        </nav>>
+    <div id="carregamento"></div>
 
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Bem Vindo ao meu Portfólio</h1>
-                <p>Desenvolvedor Web | Designer Gráfico | Criador de Conteúdo</p>
-                <a href="#projects" class="btn">Veja mais</a>
-            </div>
-        </section>
 
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Eu sou um desenvolvedor Web com experiências em HTML, CSS, JavaScript e outras tecnologias. Estou sempre em busca de novos desafios e aprendizados.</p>
-        </section>
+    <header>
+        <nav class="nav">
+          <a href="#" class="logo"> <span class="highlighted"> V</span>inicius</a>
+  
+          <div class="nav-links">
+            <a href="#home" class="nav-item nav-item-active">Inicio</a>
+            <a href="#about" class="nav-item">Sobre</a>
+            <a href="#services" class="nav-item">Servicos</a>
+            <a href="#projects" class="nav-item">Projetos</a>
+          </div>
+  
+          <div class="toggler">
+            <span class="line"></span><span class="line"></span
+            ><span class="line"></span>
+          </div>
+        </nav>
+      </header>
 
-        <section id="projects">
-            <h2>Meus Projetos</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do Projeto 1</p>
-                </div>
-                <div class="project-card">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do Projeto 2</p>
-                </div>
-            </div>
-        </section>
+      <section class="hero container" id="home">
+        <div class="hero-info">
+         <h1 class="title">Vinícius <span class="highlighted">Duarte</span></h1>
+         <p class="hero-description">Programador Sênior FrontEnd.</p>
+         <a href="#services" class="btn hero-btn">Serviços</a>
+         <div class="social-links">
+          <a href="https://facebook.com/suarede" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="link_do_seu_instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="link_do_seu_twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="link_do_seu_linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+       </div>
+ 
+       <div class="hero-img">
+         <img src="assets/img/foto.png" alt="Vinícius Duarte" width="400px" height="400px"/>
+       </div>
+  </section>
 
-        <section id="content">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo através do e-mail<a href="mailto:email@exemplo.com">email@exemplo.com</a></p>
-        </section>
+  <section class="about container" id="about">
+    <div class="about-img">
+      <img src="assets/img/sobre.png" alt="Vinicius Duarte" />
+    </div>
 
-        <footer>
-            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados</p>
-        </footer>
-    </body>
+    <div class="about-info">
+      <h2 class="secondery-title">Sobre Mim</h2>
+
+      <p class="description">
+        Me chamo Vinícius, sou formado na area de Hyper Text Markup Language, Cascading Style Sheets e JavaScript. Tenho 19 anos, atualmente estou cursando a faculdade de Sistemas da Informação, no qual pertenço ao 3° Semestre atualmente. Irei explicar o que é cada formação minha.
+      </p>
+
+      <p class="description">
+        O HTML é uma ferramenta poderosa e essencial para qualquer desenvolvedor web. Ele permite que você estruture sua página da web, insira conteúdo como texto e imagens e crie links para outras páginas da web. É realmente a base de qualquer página da web que você vê na internet.
+      </p>
+
+      <p class="description">
+        O CSS é uma ferramenta incrivelmente versátil que permite aos desenvolvedores web criar sites visualmente atraentes e responsivos.
+      </p>
+      
+      <p class="description">
+        O JS é uma linguagem de programação poderosa e flexível que é fundamental para a criação de experiências interativas na web
+      </p>
+
+      <a href="#" class="btn btn-secondery">Mais</a>
+    </div>
+  </section>
+
+  <div class="services container" id="services">
+    <div class="services-header">
+      <h2 class="secondery-title">Serviços</h2>
+    </div>
+    
+
+    <div class="grid services-grid">
+      <div class="grid-item services-item">
+        <i class="fa-solid fa-computer"></i>
+        <h3>Programação WEB</h3>
+        <p class="description">
+          Faço websites FrontEnd por preços extremamente baratos, basta entrar em contato comigo.
+        </p>
+      </div>
+      <div class="grid-item services-item">
+        <i class="fa-solid fa-meteor"></i>
+
+        <h3>Marketing Digital</h3>
+        <p class="description">
+          Trabalho como Social Media para empresas de pequeno e grande porte, deixando as redes sociais apresentável a qualquer tipo de público
+        </p>
+      </div>
+      <div class="grid-item services-item">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>Design</h3>
+        <p class="description">
+          Trabalho como Web Design, fazendo design para empresas profissionais, totalmente juvenil.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="projects container" id="projects">
+    <div class="projects-header">
+      <h2 class="secondery-title">Projetos</h2>
+
+      <div class="projects-tab">
+        <button class="projects-tab-btn projects-tab-btn-active" id="all">
+          Todos
+        </button>
+        <button class="projects-tab-btn" id="pweb">Programação Web</button>
+        <button class="projects-tab-btn" id="design">Design</button>
+        <button class="projects-tab-btn" id="marketing">Marketing</button>
+      </div>
+    </div>
+
+    <div class="grid projects-grid">
+      <div class="grid-item projects-item all pweb">
+        <img src="assets/img/pweb.png" alt="" />
+      </div>
+      <div class="grid-item projects-item all design">
+        <img src="assets/img/design.png" alt="" />
+      </div>
+      <div class="grid-item projects-item all marketing">
+        <img src="assets/img/insta.png" alt="" />
+      </div>
+      </div>
+    </div>
+  </section>
+
+      <footer class="footer">
+    <p><a href="#">Vinicius Duarte</a> &copy; Todos os direitos reservados</p>
+  </footer>
+
+        <script src="script.js"></script>
+  </body>
 </html>
